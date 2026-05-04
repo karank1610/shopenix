@@ -1,10 +1,11 @@
+import AboutSection from "./components/AboutSection";
 import Banner from "./components/Banner";
 
 const Home =()=>{
     return(
         <>
         <Banner/>
-        <Banner/>
+        <AboutSection/>
         <Banner/>
 
         </>

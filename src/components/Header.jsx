@@ -17,9 +17,9 @@ const Header = () => {
         <>
             <div className={`header-main fixed top-0 left-0 w-full z-50 py-4 transition-all duration-300 ${scrolled ? 'bg-white shadow-md' : 'bg-transparent'
                 }`}>
-                <div className="max-w-400 mx-auto px-20">
-                    <div className="header-top px-10">
-                        <div className="inner-header-top flex items-center justify-around">
+                <div className="max-w-400 mx-auto px-40">
+                    <div className="header-top">
+                        <div className="inner-header-top flex items-center justify-between">
                             <div className="left-content">
                                 <div className="header-title">
                                     <Link to={'/'}> <span className={`text-[28px] font-semibold ${scrolled ? 'text-black' : 'text-white'
