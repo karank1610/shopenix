@@ -60,7 +60,7 @@ const WorkSection = () => {
                         className="relative max-w-xl w-full"
                         onClick={(e) => e.stopPropagation()}
                     >
-                        {/* Close Button */}
+
                         <button
                             className="absolute -top-10 right-0 text-white text-3xl hover:text-red-500 transition cursor-pointer"
                             onClick={() => setActiveImg(null)}
@@ -68,10 +68,8 @@ const WorkSection = () => {
                             <IoClose />
                         </button>
 
-                        {/* Image */}
                         <img src={activeImg.img} alt="" className="w-full rounded-md block" />
 
-                        {/* Caption */}
                         <div className="text-white text-center mt-4 flex flex-col gap-1">
                             <span className="text-xl font-medium">{activeImg.title}</span>
                             <span className="text-gray-400 text-sm uppercase">{activeImg.subtitle}</span>
