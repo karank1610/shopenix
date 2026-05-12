@@ -12,8 +12,6 @@ const Home =()=>{
         <BlogSection/>
         <WorkSection/>
         <ContactUsSection/>
-        <Banner/>
-
         </>
     )
 }
