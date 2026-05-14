@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import { FaSquareInstagram, FaSquareXTwitter } from "react-icons/fa6";
 import { IoLogoFacebook } from "react-icons/io";
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
+
 
 const Header = () => {
     const [scrolled, setScrolled] = useState(false);
@@ -30,11 +31,11 @@ const Header = () => {
                                 <ul className={`header-menu flex items-center gap-5 font-semibold text-sm 
                                 ${scrolled ? 'text-gray-500' : 'text-white'}`
                                 }>
-                                    <li className="p-3 hover:text-red-600 transition"><Link to={'/'}>Home</Link></li>
-                                    <li className="p-3 hover:text-red-600 transition"><Link to={'/'}>About</Link></li>
-                                    <li className="p-3 hover:text-red-600 transition"><Link to={'/'}>Blog</Link></li>
-                                    <li className="p-3 hover:text-red-600 transition"><Link to={'/'}>Our Work</Link></li>
-                                    <li className="p-3 hover:text-red-600 transition"><Link to={'/'}>Contacts</Link></li>
+                                    <li className="p-3 hover:text-red-600 transition"><Link to="banner" smooth={true} duration={1200} offset={-80} className="cursor-pointer">Home</Link ></li>
+                                    <li className="p-3 hover:text-red-600 transition"><Link to="about" smooth={true} duration={1200} offset={-134} className="cursor-pointer">About</Link ></li>
+                                    <li className="p-3 hover:text-red-600 transition"><Link to="blog" smooth={true} duration={1200} offset={-76} className="cursor-pointer">Blog</Link ></li>
+                                    <li className="p-3 hover:text-red-600 transition"><Link to="work" smooth={true} duration={1200} offset={-76} className="cursor-pointer">Our Work</Link ></li>
+                                    <li className="p-3 hover:text-red-600 transition"><Link to="contact" smooth={true} duration={1200} offset={-76} className="cursor-pointer">Contacts</Link ></li>
                                 </ul>
                             </div>
                             <div className={`right-content flex items-center gap-10
